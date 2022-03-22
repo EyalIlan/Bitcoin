@@ -1,0 +1,18 @@
+
+.postive{
+    color: rgb(10, 241, 10);
+}
+.negitive{
+    color: red;
+}
+
+.coins_container{
+    
+    animation-name:showCoin;
+    animation-duration:3.0s
+}
+
+@keyframes showCoin {
+    from {opacity:0}
+    to {opacity:1}
+  }

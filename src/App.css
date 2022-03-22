@@ -1,38 +1,101 @@
-.App {
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.flex{
+  display: flex;
+}
+
+.between{
+  justify-content: space-between;
+}
+
+.around{
+  justify-content: space-around;
+}
+
+.end{
+  justify-content: flex-end;
+}
+
+.grid{
+  display:grid;
+  /* grid-gap: 15px; */
+  /* border: 2px solid ; */
+}
+
+.container{
+  padding: 15px;
+  width: 90%;
+  margin: auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.grid_5{
+  grid-template-columns:repeat(5,1fr);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.grid_3{
+  grid-gap: 20px;
+  grid-template-columns:repeat(3,1fr);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.grid_3_2_1{
+  grid-template-columns: 80% 20%
+}
+
+.none{
+  display: none;
+}
+
+
+.paginationButtuns{
+ 
+ margin-top: 30px;
+ height: 40px; 
+ list-style: none;
+ display: flex;
+ justify-content: center;
+
+}
+
+.paginationButtuns a{
+  padding: 10px;
+  margin:10px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #2bff3d;
+  /* color: #2b2eff; */
+  cursor: pointer;
+  transition: 0.1s background-color  ease-in;
+  transition: 0.1s color ease-in;
+}
+
+.paginationButtuns a:hover{
+  background-color: rgb(227, 243, 253);
+  color: #059411;
+  
+}
+
+/* .previouButton{
+
+}
+
+.nextButton{
+
+} */
+
+.paginationDisabled a{
+  background-color: gray;
+  border: 0px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.paginationActive a{
+  background-color: rgb(227, 243, 253);
+  color: #059411;
 }

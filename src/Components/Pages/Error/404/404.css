@@ -1,0 +1,26 @@
+#Page404{
+    position: relative;
+    height: 100vh;
+    background-image: url('/public/images/page404BG.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#returnBtn{
+    position: absolute;
+    background-color: #0717ff; /* Green */
+    border: none;
+    color: white;
+    bottom: 190px;
+    left: 840px;
+    padding: 30px 47px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold
+}
